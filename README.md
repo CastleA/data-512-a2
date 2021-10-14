@@ -21,13 +21,13 @@ The csv, wp_wpds_politicians_by_country.csv, contains 5 columns: country,	articl
 - article_name, the name of an article about a politician, generally their name
 - country, the country corresponding to the politican subject of the article
 - revision_id, an id used by wikipedia to track articles, utilized with ORES scoring service
-- article_quality_est, the score estimated by ORES include the options below, further described by [Wikipedia:Content assessment](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment).
- - FA - Featured article
- - GA - Good article
- - B - B-class article
- - C - C-class article
- - Start - Start-class article
- - Stub - Stub-class article
+- article_quality_est, the score estimated by ORES as described by [Wikipedia:Content assessment](https://en.wikipedia.org/wiki/Wikipedia:Content_assessment) and listed below:
+   - FA - Featured article
+   - GA - Good article
+   - B - B-class article
+   - C - C-class article
+   - Start - Start-class article
+   - Stub - Stub-class article
 - population, of the country corresponding to the politician subject of the article
 
 Two additional data files are included of data that was excluded from the analysis. Articles that could not be scored by ORES had their revision_id and the resultant message stored in wp_wpds_pages_no_score.csv. Countries that could not be joined across the Politicians by Country from the English-language Wikipedia dataset and 2020 World Population Data Sheet were written to wp_wpds_countries-no_match.csv.
